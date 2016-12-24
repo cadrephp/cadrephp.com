@@ -58,6 +58,7 @@
                                 <th>Name</th>
                                 <th>Description</th>
                                 <th>Package</th>
+                                <th>Packagist</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -67,8 +68,12 @@
                                 <td>{{ package.desc }}</td>
                                 <td>
                                     <a href="https://packages.cadrephp.com/#{{ package.package }}">{{ package.package }}</a>
+                                </td>
+                                <td>
                                     {% if package.packagist %}
-                                    (<a href="https://packagist.org/packages/{{ package.package }}">Packagist</a>)
+                                    <a href="https://packagist.org/packages/{{ package.package }}">Packagist</a>
+                                    {% else %}
+                                    &mdash;
                                     {% endif %}
                                 </td>
                             </tr>
