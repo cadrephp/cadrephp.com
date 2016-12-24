@@ -62,9 +62,9 @@
                             </tr>
                         </thead>
                         <tbody>
-                            {% for package in packages %}
+                            {% for name, package in packages %}
                             <tr>
-                                <td><a href="{{ package.url }}">{{ loop.index }}</a></td>
+                                <td><a href="{{ package.url }}">{{ name }}</a></td>
                                 <td>{{ package.desc }}</td>
                                 <td>
                                     <a href="https://packages.cadrephp.com/#{{ package.package }}">{{ package.package }}</a>
