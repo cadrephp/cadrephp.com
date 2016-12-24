@@ -1,6 +1,7 @@
 <?php
 namespace Application\Module;
 
+use Application\Service\PackageList;
 use Aura\Di\Container;
 use Cadre\Module\Module;
 
@@ -14,8 +15,7 @@ class Routing extends Module
     {
         $adr = $di->get('radar/adr:adr');
 
-        $adr->get('Home', '/', function () {
-            return ['success' => true];
-        })->defaults(['_view' => 'home.html.twig']);
+        $adr->get('Home', '/', PackageList::class)
+            ->defaults(['_view' => 'home.html.twig']);
     }
 }

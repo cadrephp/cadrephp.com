@@ -57,35 +57,22 @@
                             <tr>
                                 <th>Name</th>
                                 <th>Description</th>
-                                <th>Project Lead</th>
+                                <th>Package</th>
                             </tr>
                         </thead>
                         <tbody>
+                            {% for package in packages %}
                             <tr>
-                                <td><a href="https://github.com/cadrephp/AtlasOrm.DebugBar.Bridge">AtlasOrm.DebugBar.Bridge</a></td>
-                                <td>Library to use PHP DebugBar with Atlas ORM</td>
-                                <td><a href="https://github.com/andrewshell">Andrew Shell</a></td>
+                                <td><a href="{{ package.url }}">{{ loop.index }}</a></td>
+                                <td>{{ package.desc }}</td>
+                                <td>
+                                    <a href="https://packages.cadrephp.com/#{{ package.package }}">{{ package.package }}</a>
+                                    {% if package.packagist %}
+                                    (<a href="https://packagist.org/packages/{{ package.package }}">Packagist</a>)
+                                    {% endif %}
+                                </td>
                             </tr>
-                            <tr>
-                                <td><a href="https://github.com/cadrephp/Cadre.CliAdr">Cadre.CliAdr</a></td>
-                                <td>A simple dispatcher based on callables.</td>
-                                <td><a href="https://github.com/andrewshell">Andrew Shell</a></td>
-                            </tr>
-                            <tr>
-                                <td><a href="https://github.com/cadrephp/Cadre.Module">Cadre.Module</a></td>
-                                <td>Module system based on Aura.Di</td>
-                                <td><a href="https://github.com/andrewshell">Andrew Shell</a></td>
-                            </tr>
-                            <tr>
-                                <td><a href="https://github.com/cadrephp/Cadre.Package">Cadre.Package</a></td>
-                                <td>This is a package skeleton for me to use when starting new Cadre packages.</td>
-                                <td><a href="https://github.com/andrewshell">Andrew Shell</a></td>
-                            </tr>
-                            <tr>
-                                <td><a href="https://github.com/cadrephp/Cadre.Project">Cadre.Project</a></td>
-                                <td>This is a project skeleton for me to use when starting new projects.</td>
-                                <td><a href="https://github.com/andrewshell">Andrew Shell</a></td>
-                            </tr>
+                            {% endfor %}
                         </tbody>
                     </table>
                 </div>
