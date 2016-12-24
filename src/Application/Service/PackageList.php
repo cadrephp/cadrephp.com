@@ -12,7 +12,7 @@ class PackageList
                     'url' => 'https://github.com/cadrephp/AtlasOrm.DebugBar.Bridge',
                     'desc' => 'Library to use PHP DebugBar with Atlas ORM',
                     'packagist' => true,
-                    'package' => 'atlasorm-debugbar-bridge',
+                    'package' => 'cadre/atlasorm-debugbar-bridge',
                 ],
                 'Cadre.CliAdr' => [
                     'url' => 'https://github.com/cadrephp/Cadre.CliAdr',
