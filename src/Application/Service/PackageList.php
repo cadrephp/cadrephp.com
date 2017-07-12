@@ -26,6 +26,18 @@ class PackageList
                     'packagist' => true,
                     'package' => 'cadre/module',
                 ],
+                'Cadre.DomainSession' => [
+                    'url' => 'https://github.com/cadrephp/Cadre.DomainSession',
+                    'desc' => 'Library for managing session data within the domain',
+                    'packagist' => false,
+                    'package' => 'cadre/domain-session',
+                ],
+                'Cadre.Framework' => [
+                    'url' => 'https://github.com/cadrephp/Cadre.Framework',
+                    'desc' => 'Core of the Cadre framework',
+                    'packagist' => false,
+                    'package' => 'cadre/framework',
+                ],
                 'Cadre.Package' => [
                     'url' => 'https://github.com/cadrephp/Cadre.Package',
                     'desc' => 'This is a package skeleton for me to use when starting new Cadre packages',
@@ -37,12 +49,6 @@ class PackageList
                     'desc' => 'This is a project skeleton for me to use when starting new projects',
                     'packagist' => false,
                     'package' => 'cadre/project',
-                ],
-                'Cadre.DomainSession' => [
-                    'url' => 'https://github.com/cadrephp/Cadre.DomainSession',
-                    'desc' => 'Library for managing session data within the domain',
-                    'packagist' => false,
-                    'package' => 'cadre/domain-session',
                 ],
             ],
         ];
