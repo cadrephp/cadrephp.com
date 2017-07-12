@@ -38,8 +38,8 @@ class PackageList
                     'packagist' => false,
                     'package' => 'cadre/project',
                 ],
-                'Cadre.Domain_Session' => [
-                    'url' => 'https://github.com/cadrephp/Cadre.Domain_Session',
+                'Cadre.DomainSession' => [
+                    'url' => 'https://github.com/cadrephp/Cadre.DomainSession',
                     'desc' => 'Library for managing session data within the domain',
                     'packagist' => false,
                     'package' => 'cadre/domain-session',
