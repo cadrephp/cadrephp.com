@@ -78,16 +78,15 @@ hr.star-primary:after {
 header {
 	text-align: center;
 	background-color: @theme-primary;
-    background: url(../img/wallpaper.png) no-repeat center center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
 	color: white;
 	.container {
 		padding-top: 100px;
 		padding-bottom: 50px;
 	}
+    .wallpaper {
+        max-width: 1199px;
+        margin: 0 auto;
+    }
 	img {
 		display: block;
 		margin: 0 auto 20px;
@@ -475,4 +474,34 @@ footer {
   > tbody > tr:hover {
     background-color: @gray-lighter;
   }
+}
+
+@media (max-width: @screen-xs-max) {
+    header .wallpaper {
+        background: url(../img/wallpaper-xs.png) no-repeat center center;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+}
+
+@media (min-width: @screen-sm-min) and (max-width: @screen-sm-max) {
+    header .wallpaper {
+        background: url(../img/wallpaper-sm.png) no-repeat center center;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+}
+
+@media (min-width: @screen-md-min) {
+    header .wallpaper {
+        background: url(../img/wallpaper-md.png) no-repeat center center;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
 }

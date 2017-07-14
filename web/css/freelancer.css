@@ -68,16 +68,15 @@ hr.star-primary:after {
 header {
   text-align: center;
   background-color: #000000;
-  background: url(../img/wallpaper.png) no-repeat center center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
   color: white;
 }
 header .container {
   padding-top: 100px;
   padding-bottom: 50px;
+}
+header .wallpaper {
+  max-width: 1199px;
+  margin: 0 auto;
 }
 header img {
   display: block;
@@ -499,4 +498,31 @@ fieldset[disabled] .btn-success.active {
 }
 .table-hover > tbody > tr:hover {
   background-color: #eeeeee;
+}
+@media (max-width: 767px) {
+  header .wallpaper {
+    background: url(../img/wallpaper-xs.png) no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  header .wallpaper {
+    background: url(../img/wallpaper-sm.png) no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+}
+@media (min-width: 992px) {
+  header .wallpaper {
+    background: url(../img/wallpaper-md.png) no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
 }
