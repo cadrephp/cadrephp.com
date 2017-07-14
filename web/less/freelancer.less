@@ -4,6 +4,9 @@
 body {
 	font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	overflow-x: hidden;
+    background-color: white;
+    color: @gray-darker;
+    margin-top: (@navbar-height + @navbar-margin-bottom + 1px);
 }
 
 p {
@@ -24,7 +27,7 @@ a.active {
 }
 
 h1, h2, h3, h4, h5, h6 {
-	font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-family: "AXIS-ExtraBold", "Helvetica Neue", Helvetica, Arial, sans-serif;
 	text-transform: uppercase;
 	font-weight: 700;
 }
@@ -51,21 +54,21 @@ hr.star-primary:after {
 }
 
 hr.star-light {
-    border-color: white;
+    border-color: @gray-darker;
 }
 
 hr.star-light:after {
-    background-color: @theme-success;
-    color: white;
+    background-color: @theme-primary;
+    color: @gray-darker;
 }
 
 hr.star-primary {
-    border-color: @theme-primary;
+    border-color: @gray-darker;
 }
 
 hr.star-primary:after {
     background-color: white;
-    color: @theme-primary;
+    color: @gray-darker;
 }
 
 .img-centered {
@@ -74,7 +77,12 @@ hr.star-primary:after {
 
 header {
 	text-align: center;
-	background: @theme-success;
+	background-color: @theme-primary;
+    background: url(../img/wallpaper.png) no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 	color: white;
 	.container {
 		padding-top: 100px;
@@ -85,9 +93,10 @@ header {
 		margin: 0 auto 20px;
 	}
 	.intro-text {
+        visibility: hidden;
 		.name {
 			display: block;
-			font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+			font-family: "AXIS-ExtraBold", "Helvetica Neue", Helvetica, Arial, sans-serif;
 			text-transform: uppercase;
 			font-weight: 700;
 			font-size: 2em;
@@ -118,7 +127,7 @@ header {
 
 .navbar-custom {
 	background: @theme-primary;
-	font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-family: "AXIS-ExtraBold", "Helvetica Neue", Helvetica, Arial, sans-serif;
 	text-transform: uppercase;
 	font-weight: 700;
 	border: none;
@@ -481,4 +490,10 @@ footer {
     	opacity: 0;
     	display: none;
     }
+}
+
+.table-hover {
+  > tbody > tr:hover {
+    background-color: @gray-lighter;
+  }
 }

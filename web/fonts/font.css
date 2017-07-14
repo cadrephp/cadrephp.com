@@ -1,0 +1,12 @@
+@font-face {
+  font-family: 'AXIS-ExtraBold';
+  src: url('AXIS-ExtraBold.eot');
+  src: url('AXIS-ExtraBold.woff2') format('woff2'),
+       url('AXIS-ExtraBold.woff') format('woff'),
+       url('AXIS-ExtraBold.ttf') format('truetype'),
+       url('AXIS-ExtraBold.svg#AXIS-ExtraBold') format('svg'),
+       url('AXIS-ExtraBold.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
